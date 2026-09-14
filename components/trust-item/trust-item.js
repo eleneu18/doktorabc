@@ -1,8 +1,5 @@
 class TrustItem extends HTMLElement {
   connectedCallback() {
-    if (this._initialized) return;
-    this._initialized = true;
-
     const iconName = this.dataset.icon;
     const label = this.textContent.trim();
     const icon = document.createElement("span");

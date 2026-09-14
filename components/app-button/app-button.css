@@ -12,16 +12,13 @@ app-button {
 
 app-button[variant="primary"] .app-button__control {
   background: var(--color-primary-900);
-  box-shadow:
-    0 1.148px 1.0432px rgb(16 137 61 / 3%),
-    0 5.052px 2.1584px rgb(16 137 61 / 5%),
-    0 12.4px 4.3056px rgb(16 137 61 / 6%);
+  box-shadow: 0 8px 20px rgb(16 137 61 / 12%);
   color: var(--color-text-on-dark);
   font-family: var(--font-family-heading);
   font-size: 22px;
   font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+  letter-spacing: 0;
+  line-height: 150%;
 }
 
 .app-button__control:focus-visible {

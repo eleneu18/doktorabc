@@ -1,12 +1,9 @@
 class HeroBenefit extends HTMLElement {
   connectedCallback() {
-    if (this._initialized) return;
-    this._initialized = true;
-
     const item = document.createElement("div");
     const icon = document.createElement("img");
     const copy = document.createElement("p");
-    const leadingText = document.createTextNode(this.dataset.before || "");
+    const leadingText = document.createTextNode(this.dataset.before);
     const emphasis = document.createElement("strong");
 
     item.className = "hero-benefit";
@@ -16,7 +13,7 @@ class HeroBenefit extends HTMLElement {
     icon.width = 18;
     icon.height = 18;
     copy.className = "hero-benefit__copy";
-    emphasis.textContent = this.dataset.strong || "";
+    emphasis.textContent = this.dataset.strong;
     copy.append(leadingText, emphasis);
 
     if (this.dataset.note) {

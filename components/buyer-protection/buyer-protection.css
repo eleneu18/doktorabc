@@ -16,24 +16,25 @@
 
 .buyer-protection__title {
   padding-left: 6px;
-  font-size: 19.408px;
-  line-height: 1.14;
+  font-size: 19px;
+  line-height: 114%;
   white-space: nowrap;
 }
 
 .buyer-protection__stars {
   display: flex;
   align-items: center;
-  gap: 1.6px;
+  gap: 2px;
 }
 
 .buyer-protection__stars img {
-  width: 24.268px;
-  height: 24.268px;
+  width: 24px;
+  height: 24px;
 }
 
 .buyer-protection__result {
   display: flex;
+  grid-column: 2 / 4;
   align-items: baseline;
   gap: 8px;
   padding-left: 6px;
@@ -41,13 +42,13 @@
 }
 
 .buyer-protection__result strong {
-  font-size: 20.2px;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 1.14;
+  line-height: 114%;
 }
 
 .buyer-protection__result b {
-  font-size: 18.092px;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 1.14;
+  line-height: 114%;
 }

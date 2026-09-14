@@ -2,21 +2,20 @@
   position: relative;
   width: min(1851px, calc(100% - 64px));
   aspect-ratio: 1851 / 854;
-  margin: 64px auto 0;
+  margin: 80px auto 0;
   overflow: hidden;
   border-radius: 24px;
   background:
     radial-gradient(ellipse at 50% 100%, rgb(107 193 64 / 20%) 0, rgb(232 242 228 / 20%) 44%),
-    #e8f2e4;
-  container-type: inline-size;
+    var(--color-surface-hero);
 }
 
 .how-it-works__path {
   position: absolute;
-  top: 3.674cqw;
+  top: 8%;
   left: 50%;
   width: 101%;
-  height: 42.626cqw;
+  height: 92%;
   max-width: none;
   transform: translateX(-50%);
 }
@@ -24,24 +23,25 @@
 .how-it-works__header {
   position: relative;
   z-index: 1;
-  padding-top: 3.674cqw;
+  padding-top: 4%;
   text-align: center;
 }
 
 .how-it-works__eyebrow {
   font-family: var(--font-family-heading);
-  font-size: 1.297cqw;
+  font-size: clamp(10px, calc(2vw - 10px), 24px);
   font-weight: 500;
-  line-height: 3.079cqw;
-  letter-spacing: 0.108cqw;
+  line-height: 140%;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 .how-it-works__title {
+  margin-top: clamp(12px, calc(2vw - 10px), 24px);
   font-family: var(--font-family-heading);
-  font-size: 2.809cqw;
+  font-size: clamp(18px, calc(3vw - 4px), 52px);
   font-weight: 600;
-  line-height: 3.079cqw;
+  line-height: 110%;
 }
 
 .how-it-works__title span,
@@ -50,53 +50,48 @@
 }
 
 .how-it-works__title strong {
-  color: #008935;
+  color: var(--color-accent);
   font-weight: 600;
 }
 
 .how-it-works__viewport {
   position: absolute;
   z-index: 1;
-  top: 12.209cqw;
+  top: 27%;
   left: 50%;
-  width: 77.687cqw;
-  height: 29.714cqw;
+  width: 78%;
+  height: 64%;
   transform: translateX(-50%);
 }
 
 .how-it-works__track {
   display: grid;
   height: 100%;
-  grid-template-columns: 23.663cqw 27.012cqw 23.663cqw;
-  gap: 1.945cqw;
+  grid-template-columns: 7fr 8fr 7fr;
+  gap: 2%;
   align-items: end;
   justify-content: center;
-  transition: transform 300ms ease;
 }
 
 .how-step {
   position: relative;
-  height: 25.068cqw;
-  padding-top: 1.243cqw;
+  height: 85%;
+  padding-top: 5%;
 }
 
 .how-step--recommendation {
-  height: 29.714cqw;
+  height: 100%;
 }
 
 .how-step__card {
   position: relative;
-  height: 23.771cqw;
+  height: 100%;
   overflow: hidden;
-  border: 0.108cqw solid #fff;
-  border-radius: 1.297cqw;
-  background: linear-gradient(180deg, #fff 0%, rgb(255 255 255 / 15%) 100%);
-  box-shadow: 0 14px 276px rgb(0 137 53 / 10%);
+  border: 2px solid var(--color-background);
+  border-radius: clamp(8px, calc(2vw - 10px), 24px);
+  background: linear-gradient(180deg, var(--color-background) 0%, rgb(255 255 255 / 15%) 100%);
+  box-shadow: 0 16px 64px rgb(0 137 53 / 10%);
   backdrop-filter: blur(8px);
-}
-
-.how-step--recommendation .how-step__card {
-  height: 28.471cqw;
 }
 
 .how-step__number {
@@ -105,38 +100,38 @@
   top: 0;
   left: 50%;
   display: grid;
-  width: 2.323cqw;
-  height: 2.323cqw;
+  width: clamp(16px, calc(3vw - 10px), 43px);
+  height: clamp(16px, calc(3vw - 10px), 43px);
   border-radius: 50%;
   transform: translateX(-50%);
-  background: #008935;
-  color: #fff;
+  background: var(--color-accent);
+  color: var(--color-text-on-dark);
   font-family: var(--font-family-heading);
-  font-size: 1.459cqw;
+  font-size: clamp(10px, calc(2vw - 7px), 28px);
   font-weight: 500;
   line-height: 1;
   place-items: center;
-  box-shadow: 0 0.216cqw 0.216cqw rgb(0 0 0 / 4%);
+  box-shadow: 0 4px 4px rgb(0 0 0 / 4%);
 }
 
 .how-step--recommendation .how-step__number {
-  top: 0.216cqw;
+  top: 4px;
 }
 
 .how-step__title {
   position: relative;
   z-index: 2;
-  width: calc(100% - 2.593cqw);
-  margin: 2.377cqw auto 0;
+  width: 90%;
+  margin: clamp(14px, calc(3vw - 10px), 44px) auto 0;
   font-family: var(--font-family-heading);
-  font-size: 1.729cqw;
+  font-size: clamp(12px, calc(2vw - 5px), 32px);
   font-weight: 500;
-  line-height: 2.053cqw;
+  line-height: 120%;
   text-align: center;
 }
 
 .how-step__title strong {
-  color: #008935;
+  color: var(--color-accent);
   font-weight: 500;
 }
 
@@ -148,27 +143,27 @@
 }
 
 .how-step__image--phone {
-  top: 7.833cqw;
+  top: 33%;
   left: 50%;
-  width: 38.358cqw;
+  width: 162%;
   transform: translateX(-50%);
 }
 
 .how-step__image--doctor {
-  bottom: -0.756cqw;
+  bottom: -3%;
   left: 50%;
-  width: 18.855cqw;
-  height: 18.855cqw;
+  width: 70%;
+  height: 66%;
   transform: translateX(-50%);
   object-fit: contain;
   object-position: bottom;
 }
 
 .how-step__image--package {
-  top: 10.265cqw;
+  top: 43%;
   left: 50%;
-  width: 20.529cqw;
-  transform: translateX(-43%) rotate(-24.4deg);
+  width: 87%;
+  transform: translateX(-43%) rotate(-24deg);
 }
 
 .how-it-works__controls {
@@ -229,18 +224,17 @@
     width: max-content;
     gap: 24px;
     align-items: flex-start;
+    transition: transform 300ms ease;
   }
 
-  .how-step,
-  .how-step--recommendation {
+  .how-step {
     width: 289px;
     height: 303px;
     flex: 0 0 289px;
     padding-top: 13px;
   }
 
-  .how-step__card,
-  .how-step--recommendation .how-step__card {
+  .how-step__card {
     height: 290px;
     border-width: 1px;
     border-radius: 16px;
@@ -294,7 +288,7 @@
     width: 56px;
     height: 56px;
     padding: 0;
-    border: 1px solid #fff;
+    border: 1px solid var(--color-background);
     border-radius: 50%;
     background: #f5f6f7;
     cursor: pointer;
@@ -318,7 +312,7 @@
     padding: 0;
     border: 0;
     border-radius: 50%;
-    background: #fff;
+    background: var(--color-background);
     cursor: pointer;
   }
 

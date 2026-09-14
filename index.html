@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DoktorABC</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/base.css">
@@ -71,43 +71,39 @@
       </div>
 
       <div class="hero-section__content">
-        <div class="hero-section__primary">
-          <div class="hero-section__intro-and-benefits">
-            <div class="hero-section__intro">
-              <h1 class="hero-section__title">Online-Arzt- und Apothekenservice</h1>
-              <p class="hero-section__description">
-                Behandlungen online verschrieben und nach Hause geliefert.
-              </p>
-            </div>
-
-            <div class="hero-section__benefits" role="list">
-              <hero-benefit
-                data-before="Schneller und "
-                data-strong="diskreter Service"
-              ></hero-benefit>
-              <hero-benefit
-                data-before="Rezept und "
-                data-strong="Behandlung online"
-              ></hero-benefit>
-              <hero-benefit
-                data-before="Selbstabholung in "
-                data-strong="600+ Apotheken"
-              ></hero-benefit>
-              <hero-benefit
-                data-before="Expresslieferung ab "
-                data-strong="60 Min"
-                data-note="*je nach Standort"
-              ></hero-benefit>
-            </div>
-          </div>
-
-          <app-button
-            class="hero-section__cta hero-section__cta--desktop"
-            variant="primary"
-          >
-            Jetzt Rezept anfordern!
-          </app-button>
+        <div class="hero-section__intro">
+          <h1 class="hero-section__title">Online-Arzt- und Apothekenservice</h1>
+          <p class="hero-section__description">
+            Behandlungen online verschrieben und nach Hause geliefert.
+          </p>
         </div>
+
+        <div class="hero-section__benefits" role="list">
+          <hero-benefit
+            data-before="Schneller und "
+            data-strong="diskreter Service"
+          ></hero-benefit>
+          <hero-benefit
+            data-before="Rezept und "
+            data-strong="Behandlung online"
+          ></hero-benefit>
+          <hero-benefit
+            data-before="Selbstabholung in "
+            data-strong="600+ Apotheken"
+          ></hero-benefit>
+          <hero-benefit
+            data-before="Expresslieferung ab "
+            data-strong="60 Min"
+            data-note="*je nach Standort"
+          ></hero-benefit>
+        </div>
+
+        <app-button
+          class="hero-section__cta hero-section__cta--desktop"
+          variant="primary"
+        >
+          Jetzt Rezept anfordern!
+        </app-button>
 
         <div class="buyer-protection">
           <img
@@ -203,16 +199,29 @@
         </div>
 
         <div class="testimonials-section__controls">
-          <button class="testimonials-section__arrow testimonials-section__arrow--previous" type="button" aria-label="Vorherige Bewertung">
+          <button
+            class="testimonials-section__arrow testimonials-section__arrow--previous"
+            type="button"
+            aria-label="Vorherige Bewertung"
+          >
             <img src="assets/icons/testimonials/arrow-right.svg" alt="" width="24" height="24">
           </button>
           <div class="testimonials-section__pagination" aria-label="Bewertung auswählen">
-            <button class="testimonials-section__dot is-active" type="button" aria-label="Bewertung 1" aria-current="true"></button>
+            <button
+              class="testimonials-section__dot is-active"
+              type="button"
+              aria-label="Bewertung 1"
+              aria-current="true"
+            ></button>
             <button class="testimonials-section__dot" type="button" aria-label="Bewertung 2"></button>
             <button class="testimonials-section__dot" type="button" aria-label="Bewertung 3"></button>
             <button class="testimonials-section__dot" type="button" aria-label="Bewertung 4"></button>
           </div>
-          <button class="testimonials-section__arrow testimonials-section__arrow--next" type="button" aria-label="Nächste Bewertung">
+          <button
+            class="testimonials-section__arrow testimonials-section__arrow--next"
+            type="button"
+            aria-label="Nächste Bewertung"
+          >
             <img src="assets/icons/testimonials/arrow-right.svg" alt="" width="24" height="24">
           </button>
         </div>
@@ -232,7 +241,7 @@
 
       <div class="how-it-works__viewport">
         <div class="how-it-works__track">
-          <article class="how-step how-step--questionnaire">
+          <article class="how-step">
             <div class="how-step__number" aria-hidden="true">1</div>
             <div class="how-step__card">
               <h3 class="how-step__title">
@@ -260,7 +269,7 @@
             </div>
           </article>
 
-          <article class="how-step how-step--delivery">
+          <article class="how-step">
             <div class="how-step__number" aria-hidden="true">3</div>
             <div class="how-step__card">
               <h3 class="how-step__title">
@@ -297,30 +306,38 @@
 
     <nav class="site-footer__socials" aria-label="DoktorABC in sozialen Medien">
       <a class="site-footer__social" href="#" aria-label="Facebook">
-        <img src="assets/footer/facebook.svg" alt="" width="55" height="55">
+        <img class="site-footer__social-circle" src="assets/footer/facebook.svg" alt="" width="55" height="55">
       </a>
-      <a class="site-footer__social site-footer__social--composed" href="#" aria-label="LinkedIn">
+      <a class="site-footer__social" href="#" aria-label="LinkedIn">
         <img class="site-footer__social-circle" src="assets/footer/social-circle.svg" alt="">
-        <img class="site-footer__social-glyph site-footer__social-glyph--linkedin" src="assets/footer/linkedin.svg" alt="">
+        <img
+          class="site-footer__social-glyph site-footer__social-glyph--linkedin"
+          src="assets/footer/linkedin.svg"
+          alt=""
+        >
       </a>
-      <a class="site-footer__social site-footer__social--composed" href="#" aria-label="YouTube">
+      <a class="site-footer__social" href="#" aria-label="YouTube">
         <img class="site-footer__social-circle" src="assets/footer/social-circle.svg" alt="">
-        <img class="site-footer__social-glyph site-footer__social-glyph--youtube" src="assets/footer/youtube.svg" alt="">
+        <img
+          class="site-footer__social-glyph site-footer__social-glyph--youtube"
+          src="assets/footer/youtube.svg"
+          alt=""
+        >
       </a>
-      <a class="site-footer__social site-footer__social--composed" href="#" aria-label="X">
+      <a class="site-footer__social" href="#" aria-label="X">
         <img class="site-footer__social-circle" src="assets/footer/social-circle.svg" alt="">
         <img class="site-footer__social-glyph site-footer__social-glyph--x" src="assets/footer/x.svg" alt="">
       </a>
       <a class="site-footer__social" href="#" aria-label="Instagram">
-        <img src="assets/footer/instagram.svg" alt="" width="55" height="55">
+        <img class="site-footer__social-circle" src="assets/footer/instagram.svg" alt="" width="55" height="55">
       </a>
     </nav>
 
     <div class="site-footer__divider"></div>
 
     <div class="site-footer__body">
-      <div class="site-footer__certifications" aria-label="Zertifizierungen und Sicherheitsstandards">
-        <div class="footer-certification footer-certification--medicine" role="img" aria-label="DoktorABC Zertifizierung">
+      <div class="site-footer__certifications">
+        <div class="footer-certification" role="img" aria-label="DoktorABC Zertifizierung">
           <div class="footer-certification__medicine-crop">
             <img src="assets/footer/certifications-sprite.png" alt="">
           </div>
@@ -329,7 +346,11 @@
           <img class="footer-certification__dmca-lock" src="assets/footer/dmca-gray.svg" alt="">
           <img class="footer-certification__dmca-text" src="assets/footer/dmca-black.svg" alt="">
         </div>
-        <div class="footer-certification footer-certification--privacy" role="img" aria-label="Qualitäts- und Datenschutz-Zertifizierung">
+        <div
+          class="footer-certification footer-certification--privacy"
+          role="img"
+          aria-label="Qualitäts- und Datenschutz-Zertifizierung"
+        >
           <img src="assets/footer/certifications-sprite.png" alt="">
         </div>
         <div class="footer-certification footer-certification--pci" role="img" aria-label="PCI zertifiziert">

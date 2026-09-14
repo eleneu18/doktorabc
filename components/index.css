@@ -1,11 +1,11 @@
 @import url("./app-button/app-button.css");
 @import url("./hero-benefit/hero-benefit.css");
-@import url("./buyer-protection/buyer-protection.css");
-@import url("./hero-section/hero-section.css");
+@import url("./trust-item/trust-item.css");
 @import url("./site-header/site-header.css");
 @import url("./trust-ticker/trust-ticker.css");
-@import url("./trust-item/trust-item.css");
 @import url("./brand-bar/brand-bar.css");
+@import url("./hero-section/hero-section.css");
+@import url("./buyer-protection/buyer-protection.css");
 @import url("./testimonials-section/testimonials-section.css");
 @import url("./how-it-works/how-it-works.css");
 @import url("./site-footer/site-footer.css");
