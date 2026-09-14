@@ -4,4 +4,5 @@ site-header {
 
 .site-header {
   width: 100%;
+  background: var(--color-surface-dark);
 }

@@ -5,9 +5,10 @@ class SiteHeader extends HTMLElement {
 
     const header = document.createElement("header");
     const ticker = document.createElement("trust-ticker");
+    const brandBar = document.createElement("brand-bar");
 
     header.className = "site-header";
-    header.append(ticker);
+    header.append(ticker, brandBar);
     this.replaceChildren(header);
   }
 }
