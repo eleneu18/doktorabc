@@ -10,7 +10,7 @@ From the project root, run:
 npx serve .
 ```
 
-Then open the local URL printed in the terminal (typically `http://localhost:3000`).
+Then open the local URL printed in the terminal (typically `https://github.com/eleneu18/doktorabc`).
 
 ## Responsive carousel controls
 
