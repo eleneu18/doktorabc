@@ -1,16 +1,12 @@
-trust-ticker {
-  display: block;
-}
-
 .trust-ticker {
   display: grid;
-  grid-template-columns: 6.625rem minmax(0, 1fr);
+  grid-template-columns: 106px minmax(0, 1fr);
   width: 100%;
   height: var(--header-height);
   overflow: hidden;
   background: var(--color-surface-dark);
   color: var(--color-text-on-dark);
-  font-size: 0.6875rem;
+  font-size: 11px;
   font-weight: 400;
 }
 
@@ -29,7 +25,7 @@ trust-ticker {
   align-items: center;
   min-width: 0;
   overflow: hidden;
-  padding-left: 0.75rem;
+  padding-left: 12px;
 }
 
 .trust-ticker__track {
@@ -47,8 +43,8 @@ trust-ticker {
   display: flex;
   flex: none;
   align-items: center;
-  gap: 2.125rem;
-  padding-right: 2.125rem;
+  gap: 34px;
+  padding-right: 34px;
 }
 
 @keyframes trust-ticker-scroll {
@@ -57,8 +53,8 @@ trust-ticker {
   }
 }
 
-@media (max-width: 30rem) {
+@media (max-width: 480px) {
   .trust-ticker {
-    grid-template-columns: 6.25rem minmax(0, 1fr);
+    grid-template-columns: 100px minmax(0, 1fr);
   }
 }

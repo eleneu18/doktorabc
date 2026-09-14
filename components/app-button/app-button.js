@@ -6,7 +6,8 @@ class AppButton extends HTMLElement {
     const label = this.textContent.trim();
 
     const button = document.createElement("button");
-    button.type = "button";
+    button.className = "app-button__control";
+    button.type = this.getAttribute("type") || "button";
     button.textContent = label;
 
     this.replaceChildren(button);

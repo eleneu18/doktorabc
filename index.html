@@ -10,6 +10,125 @@
   <script type="module" src="components/index.js"></script>
 </head>
 <body>
-  <site-header></site-header>
+  <header class="site-header">
+    <div class="trust-ticker">
+      <p class="trust-ticker__label">Why Doktorabc?</p>
+      <div class="trust-ticker__viewport">
+        <div class="trust-ticker__track">
+          <div class="trust-ticker__group">
+            <trust-item data-icon="pill">Discreet &amp; qualified treatments</trust-item>
+            <trust-item data-icon="consultation">Online consultation &amp; prescription</trust-item>
+            <trust-item data-icon="shipping">Shipping 1–2 days</trust-item>
+            <trust-item data-icon="shield-check">Secure information</trust-item>
+            <trust-item data-icon="badge-euro">Affordable pricing with no hidden fees</trust-item>
+            <trust-item data-icon="users">600K+ Customers</trust-item>
+            <trust-item data-icon="book-check">40+ Categories</trust-item>
+            <trust-item data-icon="star">3M+ Orders</trust-item>
+            <trust-item data-icon="award">7+ Years of trust</trust-item>
+          </div>
+          <div class="trust-ticker__group" aria-hidden="true">
+            <trust-item data-icon="pill">Discreet &amp; qualified treatments</trust-item>
+            <trust-item data-icon="consultation">Online consultation &amp; prescription</trust-item>
+            <trust-item data-icon="shipping">Shipping 1–2 days</trust-item>
+            <trust-item data-icon="shield-check">Secure information</trust-item>
+            <trust-item data-icon="badge-euro">Affordable pricing with no hidden fees</trust-item>
+            <trust-item data-icon="users">600K+ Customers</trust-item>
+            <trust-item data-icon="book-check">40+ Categories</trust-item>
+            <trust-item data-icon="star">3M+ Orders</trust-item>
+            <trust-item data-icon="award">7+ Years of trust</trust-item>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-bar">
+      <img
+        class="brand-bar__logo"
+        src="assets/logos/doktorabc-dark.svg"
+        alt="DoktorABC"
+        width="215"
+        height="35"
+      >
+    </div>
+  </header>
+
+  <main>
+    <section id="real_helfy_hero_section" class="hero-section">
+      <div class="hero-section__visual">
+        <img
+          class="hero-section__image"
+          src="assets/images/hero-person-desktop.png"
+          alt="Entspannter Mann mit geschlossenen Augen"
+          width="2016"
+          height="2016"
+        >
+        <app-button
+          class="hero-section__cta hero-section__cta--overlay"
+          variant="primary"
+        >
+          Jetzt Rezept anfordern!
+        </app-button>
+      </div>
+
+      <div class="hero-section__content">
+        <div class="hero-section__primary">
+          <div class="hero-section__intro-and-benefits">
+            <div class="hero-section__intro">
+              <h1 class="hero-section__title">Online-Arzt- und Apothekenservice</h1>
+              <p class="hero-section__description">
+                Behandlungen online verschrieben und nach Hause geliefert.
+              </p>
+            </div>
+
+            <div class="hero-section__benefits" role="list">
+              <hero-benefit
+                data-before="Schneller und "
+                data-strong="diskreter Service"
+              ></hero-benefit>
+              <hero-benefit
+                data-before="Rezept und "
+                data-strong="Behandlung online"
+              ></hero-benefit>
+              <hero-benefit
+                data-before="Selbstabholung in "
+                data-strong="600+ Apotheken"
+              ></hero-benefit>
+              <hero-benefit
+                data-before="Expresslieferung ab "
+                data-strong="60 Min"
+                data-note="*je nach Standort"
+              ></hero-benefit>
+            </div>
+          </div>
+
+          <app-button
+            class="hero-section__cta hero-section__cta--desktop"
+            variant="primary"
+          >
+            Jetzt Rezept anfordern!
+          </app-button>
+        </div>
+
+        <div class="buyer-protection">
+          <img
+            class="buyer-protection__badge"
+            src="assets/images/buyer-protection.png"
+            alt="Trusted Shops"
+            width="54"
+            height="53"
+          >
+          <p class="buyer-protection__title">Käuferschutz</p>
+          <div class="buyer-protection__stars" aria-label="5 von 5 Sternen">
+            <img src="assets/icons/rating-star.svg" alt="" width="24" height="24">
+            <img src="assets/icons/rating-star.svg" alt="" width="24" height="24">
+            <img src="assets/icons/rating-star.svg" alt="" width="24" height="24">
+            <img src="assets/icons/rating-star.svg" alt="" width="24" height="24">
+            <img src="assets/icons/rating-star.svg" alt="" width="24" height="24">
+          </div>
+          <p class="buyer-protection__result"><strong>4,81</strong><b>Sehr gut</b></p>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

@@ -1,0 +1,30 @@
+app-button {
+  display: inline-block;
+}
+
+.app-button__control {
+  min-height: 44px;
+  padding: 10px 30px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+app-button[variant="primary"] .app-button__control {
+  background: var(--color-primary-900);
+  box-shadow:
+    0 1.148px 1.0432px rgb(16 137 61 / 3%),
+    0 5.052px 2.1584px rgb(16 137 61 / 5%),
+    0 12.4px 4.3056px rgb(16 137 61 / 6%);
+  color: var(--color-text-on-dark);
+  font-family: var(--font-family-heading);
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+.app-button__control:focus-visible {
+  outline: 3px solid var(--color-primary-600);
+  outline-offset: 3px;
+}
