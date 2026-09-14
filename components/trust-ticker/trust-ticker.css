@@ -31,7 +31,7 @@
 .trust-ticker__track {
   display: flex;
   width: max-content;
-  animation: trust-ticker-scroll 38s linear infinite;
+  /* animation: trust-ticker-scroll 38s linear infinite; */
   will-change: transform;
 }
 

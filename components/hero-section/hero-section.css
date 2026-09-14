@@ -29,6 +29,7 @@
   align-items: flex-start;
   width: min(667px, calc(100% - clamp(64px, 12.5vw, 240px)));
   margin-top: 72px;
+  margin-bottom: 64px;
   margin-left: clamp(64px, 6.25vw, 120px);
   gap: 30px;
 }
