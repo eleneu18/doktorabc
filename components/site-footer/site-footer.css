@@ -1,0 +1,328 @@
+.site-footer {
+  position: relative;
+  width: min(1851px, calc(100% - 64px));
+  height: 451px;
+  margin: 64px auto 75px;
+  overflow: hidden;
+  border-radius: 43px;
+  background: #000;
+  color: #fff;
+}
+
+.site-footer__logo {
+  position: absolute;
+  top: 45px;
+  left: 140px;
+  width: 247px;
+  height: 40px;
+}
+
+.site-footer__socials {
+  position: absolute;
+  top: 45px;
+  right: 112px;
+  display: flex;
+  gap: 27px;
+}
+
+.site-footer__social {
+  position: relative;
+  display: block;
+  width: 55px;
+  height: 55px;
+  flex: 0 0 55px;
+}
+
+.site-footer__social > img:first-child,
+.site-footer__social-circle {
+  width: 100%;
+  height: 100%;
+}
+
+.site-footer__social-glyph {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.site-footer__social-glyph--linkedin {
+  width: 21px;
+  height: 21px;
+}
+
+.site-footer__social-glyph--youtube {
+  width: 28px;
+  height: 28px;
+}
+
+.site-footer__social-glyph--x {
+  width: 24px;
+  height: 24px;
+}
+
+.site-footer__divider {
+  position: absolute;
+  top: 135px;
+  left: 3px;
+  width: calc(100% - 6px);
+  height: 1px;
+  background: rgb(255 255 255 / 45%);
+}
+
+.site-footer__body {
+  position: absolute;
+  top: 170px;
+  left: 50%;
+  display: flex;
+  width: min(1230px, calc(100% - 80px));
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(-50%);
+}
+
+.site-footer__certifications {
+  display: flex;
+  height: 113px;
+  align-items: center;
+  gap: 18px;
+}
+
+.footer-certification {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  flex: 0 0 96px;
+  overflow: hidden;
+}
+
+.footer-certification__medicine-crop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 96px;
+  height: 70px;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+}
+
+.footer-certification__medicine-crop > img {
+  position: absolute;
+  top: -629px;
+  left: 0;
+  width: 976px;
+  height: 1079px;
+  max-width: none;
+}
+
+.footer-certification--privacy > img {
+  position: absolute;
+  top: -97px;
+  left: -629px;
+  width: 1101px;
+  height: 1217px;
+  max-width: none;
+}
+
+.footer-certification--dmca {
+  overflow: visible;
+}
+
+.footer-certification__dmca-lock {
+  position: absolute;
+  top: 35px;
+  left: 8px;
+  width: 17px;
+  height: 26px;
+  transform: scaleY(-1);
+}
+
+.footer-certification__dmca-text {
+  position: absolute;
+  top: 38px;
+  left: 25px;
+  width: 62px;
+  height: 20px;
+  transform: scaleY(-1);
+}
+
+.footer-certification--pci {
+  display: grid;
+  place-items: center;
+}
+
+.footer-certification--pci img {
+  width: 95px;
+  height: 66px;
+}
+
+.site-footer__disclaimer {
+  width: 1200px;
+  max-width: 100%;
+  margin-top: 27px;
+  font-family: var(--font-family-sans);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+}
+
+.site-footer__copyright {
+  margin-top: 20px;
+  font-family: var(--font-family-sans);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+}
+
+@media (max-width: 1100px) and (min-width: 701px) {
+  .site-footer__logo {
+    left: 64px;
+  }
+
+  .site-footer__socials {
+    right: 64px;
+  }
+}
+
+@media (max-width: 700px) {
+  .site-footer {
+    width: 100%;
+    height: 664px;
+    margin: 40px 0 0;
+    border-radius: 30px 30px 0 0;
+  }
+
+  .site-footer__logo {
+    top: 60px;
+    left: 30px;
+    width: 202px;
+    height: 33px;
+  }
+
+  .site-footer__socials {
+    top: 121px;
+    right: auto;
+    left: 30px;
+    gap: 18px;
+  }
+
+  .site-footer__social {
+    width: 50px;
+    height: 50px;
+    flex-basis: 50px;
+  }
+
+  .site-footer__social-glyph--linkedin {
+    width: 19px;
+    height: 19px;
+  }
+
+  .site-footer__social-glyph--youtube {
+    width: 25px;
+    height: 25px;
+  }
+
+  .site-footer__social-glyph--x {
+    width: 22px;
+    height: 22px;
+  }
+
+  .site-footer__divider {
+    top: 209px;
+  }
+
+  .site-footer__body {
+    top: 237px;
+    width: calc(100% - 34px);
+  }
+
+  .site-footer__certifications {
+    width: 100%;
+    height: 90px;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .footer-certification {
+    width: 76px;
+    height: 76px;
+    flex-basis: 76px;
+  }
+
+  .footer-certification__medicine-crop {
+    width: 76px;
+    height: 56px;
+  }
+
+  .footer-certification__medicine-crop > img {
+    top: -503px;
+    width: 780px;
+    height: 863px;
+  }
+
+  .footer-certification--privacy > img {
+    top: -77px;
+    left: -503px;
+    width: 880px;
+    height: 973px;
+  }
+
+  .footer-certification__dmca-lock {
+    top: 25px;
+    left: 5px;
+    width: 14px;
+    height: 21px;
+  }
+
+  .footer-certification__dmca-text {
+    top: 28px;
+    left: 18px;
+    width: 50px;
+    height: 16px;
+  }
+
+  .footer-certification--pci img {
+    width: 76px;
+    height: 53px;
+  }
+
+  .site-footer__disclaimer {
+    width: 337px;
+    margin-top: 38px;
+    color: rgb(255 255 255 / 90%);
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .site-footer__copyright {
+    position: absolute;
+    top: 356px;
+    margin-top: 0;
+    font-size: 12px;
+    line-height: 18px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 374px) {
+  .site-footer__logo,
+  .site-footer__socials {
+    left: 20px;
+  }
+
+  .site-footer__socials {
+    gap: 10px;
+  }
+
+  .site-footer__certifications {
+    gap: 7px;
+  }
+
+  .footer-certification {
+    width: 72px;
+    height: 72px;
+    flex-basis: 72px;
+  }
+}
