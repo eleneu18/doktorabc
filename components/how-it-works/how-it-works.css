@@ -143,9 +143,9 @@
 }
 
 .how-step__image--phone {
-  top: 33%;
+  bottom: 0;
   left: 50%;
-  width: 162%;
+  width: 64%;
   transform: translateX(-50%);
 }
 
@@ -161,8 +161,8 @@
 
 .how-step__image--package {
   top: 43%;
-  left: 50%;
-  width: 87%;
+  left: 43%;
+  width: 100%;
   transform: translateX(-43%) rotate(-24deg);
 }
 
@@ -256,8 +256,7 @@
   }
 
   .how-step__image--phone {
-    top: 95px;
-    width: 530px;
+    width: 190px;
   }
 
   .how-step__image--doctor {

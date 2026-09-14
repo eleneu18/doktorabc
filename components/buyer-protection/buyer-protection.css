@@ -52,3 +52,45 @@
   font-weight: 700;
   line-height: 114%;
 }
+
+@media (max-width: 480px) {
+  .buyer-protection {
+    width: 258px;
+    height: 32px;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .buyer-protection__badge {
+    width: 32px;
+    height: 31px;
+  }
+
+  .buyer-protection__title,
+  .buyer-protection__result {
+    padding-left: 0;
+  }
+
+  .buyer-protection__title {
+    font-size: 11px;
+  }
+
+  .buyer-protection__stars {
+    gap: 1px;
+  }
+
+  .buyer-protection__stars img {
+    width: 13px;
+    height: 13px;
+  }
+
+  .buyer-protection__result {
+    grid-column: auto;
+    gap: 4px;
+  }
+
+  .buyer-protection__result strong,
+  .buyer-protection__result b {
+    font-size: 11px;
+  }
+}
