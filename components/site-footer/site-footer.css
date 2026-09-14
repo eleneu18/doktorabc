@@ -2,12 +2,12 @@
   display: grid;
   grid-template-rows: 135px 1px 1fr;
   width: min(1851px, calc(100% - 64px));
-  height: 451px;
   margin: 64px auto 75px;
   overflow: hidden;
   border-radius: 43px;
   background: #000;
   color: var(--color-text-on-dark);
+  padding-bottom: 27px;
 }
 
 .site-footer__logo {
@@ -164,8 +164,7 @@
 }
 
 .site-footer__disclaimer {
-  width: 1200px;
-  max-width: 100%;
+  max-width: 90%;
   margin-top: 27px;
 }
 
