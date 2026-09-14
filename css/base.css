@@ -1,0 +1,16 @@
+:root {
+  --color-background: #ffffff;
+  --color-surface-dark: #08080a;
+  --color-surface-muted: #3d404d;
+  --color-text: #08080a;
+  --color-text-on-dark: #ffffff;
+  --font-family-sans: "Roboto", Arial, sans-serif;
+  --header-height: 2.625rem;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-family-sans);
+  line-height: 1.2;
+}

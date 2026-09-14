@@ -1,0 +1,38 @@
+trust-item {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 0.5625rem;
+  white-space: nowrap;
+}
+
+.trust-item__icon {
+  display: grid;
+  flex: 0 0 1.25rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  overflow: hidden;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-surface-muted);
+}
+
+.trust-item__icon img {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+trust-item[data-icon="shipping"] .trust-item__icon img {
+  width: 0.8125rem;
+  height: 0.8125rem;
+}
+
+trust-item[data-icon="shield-check"] .trust-item__icon img {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+trust-item[data-icon="badge-euro"] .trust-item__icon img {
+  width: 1rem;
+  height: 1rem;
+}
